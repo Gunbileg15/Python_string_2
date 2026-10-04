@@ -2,7 +2,12 @@
 
 # Exercise 1
 def is_valid_email(text):
-    # Write your code here
+    a = input()
+    b = ""
+    for c in a:
+        if c not in "aeiouAEIOU":
+            b += c
+    print(b)
     pass
 
 # Exercise 2
