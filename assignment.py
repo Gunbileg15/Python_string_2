@@ -42,6 +42,6 @@ def is_palindrome(text):
             b += x.lower()
 
     if b == b[::-1]:
-        return "true"
+        return True
     else:
-        return "false"
+        return False
