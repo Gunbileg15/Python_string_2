@@ -22,19 +22,15 @@ def get_initials(text):
 
 # Exercise 4
 def extract_year(text):
-    b = text.split()
-    c = "False"
-
-    for d in b:
+    for word in text.split():
         e = ""
-        for f in d:
-            if f.isdigit():
-                e += f
-
-        if len(e) == 4 and c == "False":
-            c = e
-
-    return c
+        for char in word:
+            if char.isdigit():
+                e += char
+        if len(e) == 4:
+            return e
+        else:
+            return False
 
 # Exercise 5
 def is_palindrome(text):
